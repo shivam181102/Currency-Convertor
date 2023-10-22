@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CURRENCY CONVERTOR</h1>
+    <div class="in-container">
+        <div class="from box">
+            <h3 id="inpHead">USD</h3>
+            <input type="number" value="1" id="inpValue">
+            <label for="CountryInp">Select Country</label>
+            <select id="CountryInp">
+                <option value="USD" >USD</option>
+                <option value="INR" selected>INR</option>
+                <option value="EUR">EUR</option>
+                <option value="AUD">AUD</option>
+                
+            </select>
+        </div>
+        <div class="to box">
+            <h3 id="outHead">INR</h3>
+            <input type="number" id="outValue">
+            <label for="CountryOut">Select Country</label>
+            <select id="CountryOut">
+                <option value="USD" selected>USD</option>
+                <option value="INR">INR</option>
+                <option value="EUR">EUR</option>
+                <option value="AUD">AUD</option>
+                
+                    
+                  </select>
+            
+        </div>
+    </div>
+    <button id="convert" onclick="converts()">Convert</button>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
